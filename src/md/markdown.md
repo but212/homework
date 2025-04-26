@@ -168,30 +168,33 @@
 ```markdown
 [문서 내 하이퍼링크](#마크다운-문법)
 
-[마크다운](https://markdown.com)
+[내 깃헙 페이지](https://github.com/but212)
 ```
 
 ->
 [문서 내 하이퍼링크](#마크다운-문법)
 
-[마크다운](https://markdown.com)
+[내 깃헙 페이지](https://github.com/but212)
 
 ### 이미지
 이미지는 `![이미지 텍스트](이미지 주소)`를 사용하여 생성할 수 있습니다.
 
 ```markdown
-![마크다운](https://markdown.com/image.png)
+![내 깃헙 페이지](../assets/my_portrait.jpg)
 ```
+
+->
+![내 깃헙 페이지](../assets/my_portrait.jpg)
 
 ### 이미지에 링크추가
 위의 두 요소를 합치면 이미지에 링크를 추가할 수 있습니다.
 
 ```markdown
-[![마크다운](https://markdown.com/image.png)](https://markdown.com)
+[![내 깃헙 페이지](../assets/my_portrait.jpg)](https://github.com/but212)
 ```
 
 ->
-[![마크다운](https://markdown.com/image.png)](https://markdown.com)
+[![내 깃헙 페이지](../assets/my_portrait.jpg)](https://github.com/but212)
 
 ## 코드
 
