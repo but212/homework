@@ -110,11 +110,13 @@
 취소선은 적용하고자 하는 문장 앞 뒤로 `~~`를 붙이면 됩니다.
 
 ```markdown
-**deprecated** ~~fntype~~
+**deprecated** ~~SendSyncFn~~
+**to replace** FnType
 ```
 
 ->
-**deprecated** ~~fntype~~
+**deprecated** ~~SendSyncFn~~
+**to replace** FnType
 
 ## 리스트
 
