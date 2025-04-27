@@ -217,11 +217,11 @@
 ### 코드 블럭
 마크다운은 백틱 세개(```)를 사용하여 코드 블럭을 나타낼 수 있습니다.
 
-```markdown
+````markdown
 ```python
 print("Hello World!")
-````
 ```
+````
 
 ->  
 ```python
