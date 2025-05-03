@@ -14,42 +14,43 @@
   <!--
     이미지 성능 최적화 방법
     decoding="async": 이미지가 로드되기 전에 HTML을 파싱할 수 있도록 함
-    이미지 압축: 200x200px이면 압축해도 크게 티가 안난다. 압축을 통해 파일 로딩 시간 절약 가능
+    이미지 압축: jpeg 이미지를 적당히 압축하면 크게 티가 안난다. 압축을 통해 파일 로딩 시간 단축
+    리사이징: 이미지의 크기를 avatar div에 맞게 줄여서 파일 크기를 줄이며 로딩시간 단축(64x64)
     -->
   <div class="container">
     <div class="grid">
       <!-- 첫 번째 줄  -->
       <div class="avatar">
-        <img src="./images_comp/face1.jpg" alt="한혜진" width="64" height="64" decoding="async">
+        <img src="./images_opt/face1.jpg" alt="한혜진" width="64" height="64" decoding="async">
         <span class="status offline" aria-label="오프라인"></span>
       </div>
       <div class="avatar">
-        <img src="./images_comp/face2.jpg" alt="최송희" width="64" height="64" decoding="async">
+        <img src="./images_opt/face2.jpg" alt="최송희" width="64" height="64" decoding="async">
         <span class="status online" aria-label="온라인"></span>
       </div>
       <div class="avatar">
-        <img src="./images_comp/face3.jpg" alt="김지은" width="64" height="64" decoding="async">
+        <img src="./images_opt/face3.jpg" alt="김지은" width="64" height="64" decoding="async">
         <span class="status offline" aria-label="오프라인"></span>
       </div>
       <div class="avatar">
-        <img src="./images_comp/face4.jpg" alt="이혜리" width="64" height="64" decoding="async">
+        <img src="./images_opt/face4.jpg" alt="이혜리" width="64" height="64" decoding="async">
         <span class="status online" aria-label="온라인"></span>
       </div>
       <!-- 두 번째 줄 -->
       <div class="avatar">
-        <img src="./images_comp/face5.jpg" alt="전준형" width="64" height="64" decoding="async">
+        <img src="./images_opt/face5.jpg" alt="전준형" width="64" height="64" decoding="async">
         <span class="status online" aria-label="온라인"></span>
       </div>
       <div class="avatar">
-        <img src="./images_comp/face6.jpg" alt="박서준" width="64" height="64" decoding="async">
+        <img src="./images_opt/face6.jpg" alt="박서준" width="64" height="64" decoding="async">
         <span class="status offline" aria-label="오프라인"></span>
       </div>
       <div class="avatar">
-        <img src="./images_comp/face7.jpg" alt="이수혁" width="64" height="64" decoding="async">
+        <img src="./images_opt/face7.jpg" alt="이수혁" width="64" height="64" decoding="async">
         <span class="status offline" aria-label="오프라인"></span>
       </div>
       <div class="avatar">
-        <img src="./images_comp/face8.jpg" alt="이민호" width="64" height="64" decoding="async">
+        <img src="./images_opt/face8.jpg" alt="이민호" width="64" height="64" decoding="async">
         <span class="status offline" aria-label="오프라인"></span>
       </div>
     </div>
