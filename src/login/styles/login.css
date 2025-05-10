@@ -157,7 +157,7 @@ body {
   display: none;
 }
 
-input:invalid + .error-message {
+input:user-invalid + .error-message {
   display: block;
   width: var(--responsive-width);
   padding: 0 var(--spacing-medium);
