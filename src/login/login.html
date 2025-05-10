@@ -27,16 +27,22 @@
           placeholder="비밀번호"
         />
       </div>
-    </form>
 
-    <div class="login-option">
-      <div class="login-state">
-        <input type="checkbox" id="login-state-checkbox" />
-        <label for="login-state-checkbox">로그인 상태 유지</label>
+      <div class="login-option">
+        <div class="login-state">
+          <input type="checkbox" id="login-state-checkbox" />
+          <label for="login-state-checkbox">로그인 상태 유지</label>
+        </div>
+        <div class="ip-security">
+          <a href="./pages/ip_security.html">IP 보안</a>
+          <input type="checkbox" id="ip-security-checkbox" class="hidden-checkbox" />
+          <label for="ip-security-checkbox" class="toggle-switch">
+            <span class="toggle-status On">ON</span>
+            <span class="toggle-status Off">OFF</span>
+          </label>
+        </div>
       </div>
-      <div class="ip-security">
-        <a href="./pages/ip_security.html">IP 보안</a>
-      </div>
-    </div>
+      <button type="submit" class="login-button">로그인</button>
+    </form>
   </body>
 </html>
