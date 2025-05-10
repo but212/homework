@@ -14,6 +14,7 @@
   --input-height: 2.8125rem;
   --checkbox-size: 1.5rem;
   --border-radius: 4px;
+  --responsive-width: 100%;
 }
 
 body {
@@ -25,8 +26,8 @@ body {
 }
 
 .login-form {
-  width: 100%;
-  max-width: calc(100% - 2.5rem);
+  width: var(--responsive-width);
+  max-width: calc(var(--responsive-width) - 2.5rem);
   margin: 0 auto;
   padding: var(--spacing-medium);
 }
@@ -39,24 +40,24 @@ body {
 
 .input-field {
   margin-bottom: var(--spacing-medium);
-}
 
-.input-field input {
-  width: 100%;
-  height: var(--input-height);
-  padding: 0 var(--spacing-medium);
-  font-size: var(--font-size-small);
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
-}
+  input {
+    width: var(--responsive-width);
+    height: var(--input-height);
+    padding: 0 var(--spacing-medium);
+    font-size: var(--font-size-small);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+  }
 
-.input-field input:focus {
-  outline: 0.5px solid var(--focus-color);
-  background-color: var(--focus-background-color);
+  input:focus {
+    outline: 0.5px solid var(--focus-color);
+    background-color: var(--focus-background-color);
+  }
 }
 
 .login-button {
-  width: 100%;
+  width: var(--responsive-width);
   height: var(--input-height);
   margin-top: var(--spacing-medium);
   font-size: var(--font-size-medium);
@@ -65,10 +66,10 @@ body {
   border-radius: var(--border-radius);
   border: none;
   cursor: pointer;
-}
 
-.login-button:hover {
-  background-color: #02bb54;
+  &:hover {
+    background-color: #02bb54;
+  }
 }
 
 .login-option {
@@ -102,16 +103,17 @@ body {
 
 .login-state-checkbox {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
   cursor: pointer;
   position: relative;
   padding: 0;
   margin: 0;
   vertical-align: middle;
 }
+
 .login-state-text {
-  margin-left: 8px;
+  margin-left: var(--spacing-small);
   vertical-align: middle;
 }
 
@@ -148,7 +150,7 @@ body {
 
 .toggle-status.Off,
 .toggle-status.On {
-  margin-left: 8px;
+  margin-left: var(--spacing-small);
 }
 
 .error-message {
@@ -157,7 +159,7 @@ body {
 
 input:invalid + .error-message {
   display: block;
-  width: 100%;
+  width: var(--responsive-width);
   padding: 0 var(--spacing-medium);
   font-size: var(--font-size-small);
   color: red;
