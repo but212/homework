@@ -1,14 +1,37 @@
 module.exports = {
-  arrowParens: "always",
-  htmlWhitespaceSensitivity: "css",
-  bracketSameLine: false,
-  bracketSpacing: true,
-  printWidth: 300,
-  proseWrap: "preserve",
-  quoteProps: "as-needed",
+  printWidth: 100,
+  tabWidth: 2,
+  useTabs: false,
   semi: true,
   singleQuote: true,
-  tabWidth: 2,
-  trailingComma: "es5",
-  useTabs: false,
+  quoteProps: 'as-needed',
+  jsxSingleQuote: true,
+  trailingComma: 'es5',
+  bracketSpacing: true,
+  bracketSameLine: false,
+  arrowParens: 'always',
+  htmlWhitespaceSensitivity: 'css',
+  proseWrap: 'preserve',
+  endOfLine: 'lf',
+  overrides: [
+    {
+      files: '*.md',
+      options: {
+        printWidth: 120,
+        proseWrap: 'never',
+      },
+    },
+    {
+      files: ['*.json', '*.jsonc'],
+      options: {
+        singleQuote: false,
+      },
+    },
+    {
+      files: ['*.css', '*.scss', '*.less'],
+      options: {
+        singleQuote: false,
+      },
+    },
+  ],
 };
