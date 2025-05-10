@@ -1,1 +1,42 @@
 <!-- HTML 마크업을 작성해 주세요 -->
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/modern_reset.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <title>네이버 로그인</title>
+  </head>
+  <body>
+    <h1 class="logo">
+      <img src="./images/logo.svg" alt="네이버" width="230" height="44" />
+    </h1>
+
+    <form action="" method="post" class="login-form">
+      <div class="input-field">
+        <input type="email" id="user-id" name="user-id" required placeholder="아이디(이메일)" />
+      </div>
+      <div class="input-field">
+        <input
+          type="password"
+          name="user-password"
+          id="user-password"
+          required
+          minlength="10"
+          placeholder="비밀번호"
+        />
+      </div>
+    </form>
+
+    <div class="login-option">
+      <div class="login-state">
+        <input type="checkbox" id="login-state-checkbox" />
+        <label for="login-state-checkbox">로그인 상태 유지</label>
+      </div>
+      <div class="ip-security">
+        <a href="./pages/ip_security.html">IP 보안</a>
+      </div>
+    </div>
+  </body>
+</html>
