@@ -151,6 +151,17 @@ body {
   margin-left: 8px;
 }
 
+.error-message {
+  display: none;
+}
+
+input:invalid + .error-message {
+  display: block;
+  width: 100%;
+  padding: 0 var(--spacing-medium);
+  font-size: var(--font-size-small);
+  color: red;
+}
 
 @media screen and (min-width: 768px) {
   .login-form {
@@ -188,7 +199,6 @@ body {
     justify-self: center;
   }
 }
-
 
 .sr-only {
   position: absolute;
