@@ -1,3 +1,113 @@
 @import "./reset.css";
 @import "./theme.css";
 @import "./base.css";
+
+:root {
+  --card-height: var(--size);
+}
+
+.white-text {
+  color: var(--white);
+}
+
+.black-text {
+  color: var(--black);
+}
+
+.product-card {
+  position: relative;
+  width: 100%;
+  height: var(--card-height);
+}
+
+.product-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+}
+
+.iphone-15-pro .product-image {
+  background-image: url("../products/iphone15_pro.jpeg");
+}
+
+@media (min-resolution: 2dppx) {
+  .iphone-15-pro .product-image {
+    background-image: url("../products/iphone15_pro_2x.jpeg");
+  }
+}
+
+@media (min-width: 1024px) {
+  .iphone-15-pro .product-image {
+    background-image: url("../products/iphone15_pro_wide.jpeg");
+  }
+}
+
+@media (min-width: 1024px) and (min-resolution: 2dppx) {
+  .iphone-15-pro .product-image {
+    background-image: url("../products/iphone15_pro_wide_2x.jpeg");
+  }
+}
+
+.product-content {
+  position: relative;
+  padding-top: var(--large-spacing);
+  text-align: center;
+  height: auto;
+}
+
+.product-title {
+  font-size: var(--extra-large-text);
+  font-weight: 800;
+  margin-bottom: var(--x-small-spacing);
+  line-height: 1.1;
+}
+
+.product-subtitle {
+  font-size: var(--medium-text);
+  line-height: var(--line-normal);
+}
+
+.product-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--base-spacing);
+  margin-top: var(--base-spacing);
+}
+
+.product-link {
+  font-size: var(--x-small-text);
+  color: var(--blue-200);
+  text-decoration: none;
+  padding: var(--x-small-spacing) var(--small-spacing);
+  border-radius: 980px;
+  border: 1px solid var(--blue-200);
+
+  &:hover {
+    background-color: var(--blue-400);
+    color: var(--white);
+  }
+}
+
+.product-link.learn-more {
+  background-color: var(--blue-200);
+  color: var(--white);
+}
+
+@media (max-width: 1023px) {
+  .product-title {
+    font-size: var(--large-text);
+  }
+
+  .product-subtitle {
+    font-size: var(--base-text);
+  }
+
+  .product-content {
+    padding-top: var(--large-spacing);
+  }
+}
