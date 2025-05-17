@@ -18,6 +18,7 @@
   position: relative;
   width: 100%;
   height: var(--card-height);
+  margin-bottom: var(--x-small-spacing);
 }
 
 .product-image {
@@ -49,6 +50,9 @@
 .macbook-air .product-image {
   background-image: url("../products/macbook_air.jpeg");
 }
+.apple-watch .product-image {
+  background-image: url("../products/apple_watch.jpeg");
+}
 
 @media (min-resolution: 2dppx) {
   .iphone-15-pro .product-image {
@@ -68,6 +72,9 @@
   }
   .macbook-air .product-image {
     background-image: url("../products/macbook_air_2x.jpeg");
+  }
+  .apple-watch .product-image {
+    background-image: url("../products/apple_watch_2x.jpeg");
   }
 }
 

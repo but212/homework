@@ -1,3 +1,10 @@
 @import "./card-component.css";
 
-/* 카드 레이아웃 */
+.cards-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: var(--base-spacing);
+  gap: var(--base-spacing);
+  margin: 0 auto;
+  width: 100%;
+}
