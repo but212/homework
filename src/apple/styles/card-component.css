@@ -34,10 +34,40 @@
 .iphone-15-pro .product-image {
   background-image: url("../products/iphone15_pro.jpeg");
 }
+.airpods-pro .product-image {
+  background-image: url("../products/airpods_pro.jpeg");
+}
+.iphone-15 .product-image {
+  background-image: url("../products/iphone15.jpeg");
+}
+.ipad-air .product-image {
+  background-image: url("../products/ipad_air.jpeg");
+}
+.ipad-pro .product-image {
+  background-image: url("../products/ipad_pro.jpeg");
+}
+.macbook-air .product-image {
+  background-image: url("../products/macbook_air.jpeg");
+}
 
 @media (min-resolution: 2dppx) {
   .iphone-15-pro .product-image {
     background-image: url("../products/iphone15_pro_2x.jpeg");
+  }
+  .airpods-pro .product-image {
+    background-image: url("../products/airpods_pro_2x.jpeg");
+  }
+  .iphone-15 .product-image {
+    background-image: url("../products/iphone15_2x.jpeg");
+  }
+  .ipad-air .product-image {
+    background-image: url("../products/ipad_air_2x.jpeg");
+  }
+  .ipad-pro .product-image {
+    background-image: url("../products/ipad_pro_2x.jpeg");
+  }
+  .macbook-air .product-image {
+    background-image: url("../products/macbook_air_2x.jpeg");
   }
 }
 
@@ -45,11 +75,23 @@
   .iphone-15-pro .product-image {
     background-image: url("../products/iphone15_pro_wide.jpeg");
   }
+  .ipad-air .product-image {
+    background-image: url("../products/ipad_air_wide.jpeg");
+  }
+  .ipad-pro .product-image {
+    background-image: url("../products/ipad_pro_wide.jpeg");
+  }
 }
 
 @media (min-width: 1024px) and (min-resolution: 2dppx) {
   .iphone-15-pro .product-image {
     background-image: url("../products/iphone15_pro_wide_2x.jpeg");
+  }
+  .ipad-air .product-image {
+    background-image: url("../products/ipad_air_wide_2x.jpeg");
+  }
+  .ipad-pro .product-image {
+    background-image: url("../products/ipad_pro_wide_2x.jpeg");
   }
 }
 
