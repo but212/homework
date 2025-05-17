@@ -267,7 +267,6 @@ print("Hello World!")
 
 ```markdown
 ---
-
 ---
 
 ---
