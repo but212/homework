@@ -18,7 +18,6 @@
   position: relative;
   width: 100%;
   height: var(--card-height);
-  margin-top: var(--x-small-spacing);
 }
 
 .product-image {

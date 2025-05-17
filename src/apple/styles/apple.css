@@ -3,8 +3,14 @@
 .cards-grid-layout {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: var(--x-small-spacing);
+  grid-gap: var(--x-small-spacing);
   width: 100%;
+  margin: var(--x-small-spacing);
+}
+
+.single-card-layout {
+  display: grid;
+  gap: var(--x-small-spacing);
 }
 
 @media (max-width: 1023px) {
