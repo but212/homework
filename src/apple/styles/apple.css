@@ -3,9 +3,7 @@
 .cards-grid-layout {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: var(--base-spacing);
-  gap: var(--base-spacing);
-  margin: 0 auto;
+  column-gap: var(--x-small-spacing);
   width: 100%;
 }
 
