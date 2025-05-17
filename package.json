@@ -1,10 +1,47 @@
 {
+  "name": "homework",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
     "start": "live-server . --port=8090 --host=localhost --no-browser",
-    "format": "prettier . --check"
+    "format": "biome format --write .",
+    "format:check": "biome format --check .",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --apply .",
+    "check": "biome check .",
+    "check:fix": "biome check --apply .",
+    "prettier:format": "prettier --write \"**/*.{css,scss,md,json}\""
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "live-server": "^1.2.2",
     "prettier": "^3.5.3"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "jsxSingleQuote": true,
+    "arrowParens": "always",
+    "endOfLine": "lf",
+    "overrides": [
+      {
+        "files": "*.{css,scss}",
+        "options": {
+          "singleQuote": false
+        }
+      },
+      {
+        "files": "*.json",
+        "options": {
+          "singleQuote": false,
+          "tabWidth": 2
+        }
+      }
+    ]
   }
 }
